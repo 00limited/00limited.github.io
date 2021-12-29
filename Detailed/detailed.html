@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detailed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="detailed.css">
+</head>
+<body>
+    <section>
+        <!-----------navigation------------>
+            <nav>
+                <a href="../Home/home.html" class="logo">FINDPLACE</a>
+                <ul>
+                    <li><a href="../Location/index.html" class="active">Location</a></li>
+                    <li><a href="../Contact Us/index.html">Contact Us</a></li>
+                    <li><a href="#">Log In<img src="../image/Hero.svg" height="20px"></a></li>
+                </ul>
+            </nav>
+            <form id="search" >
+                <i class="fa fa-angle-left"></i>
+                <h1>SEARCH</h1>
+            </form>
+    </section>
+
+    <div>
+        <div class="name-container">
+            <h1>NOBLE HOUSE</h1>
+            <div>
+                <p>Noble House, Mega Kuningan</p>
+                <p>No. 2, Jl. Dr.Ide Anak Agung Gde Agung Kav. E 4.2
+                   Jakarta, JK 12950</p>
+            </div>
+        </div>
+    </div>
+    <div class="star-container">    
+        <span class="fa fa-star checked"></span>
+        <p>4.5</p>
+        <hr>
+        <p>15 Review</p>
+    </div>
+    <div class="view-container">
+        <div class="pict-view">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="/image/picture1.svg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(1)" alt="Badroom">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(2)" alt="Kichen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(3)" alt="Meeting room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(4)" alt="Office">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(5)" alt="Building">
+                </div>    
+                <div class="column">
+                    <img class="demo cursor" src="/image/picture1.svg"  onclick="currentSlide(6)" alt="Ground">
+                </div>
+            </div>               
+         
+        </div>
+        <div class="interested-view">
+            <div class="interview"> 
+                <h3>Interested In This Building ?</h3>
+                <p>View available space and reserve online.</p>
+                <form class="button-view">
+                    <input type="button" value="View available workspace" onclick="openWin()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="AW">
+        <div>
+            <h1>Available Workspace</h1>
+        </div>
+        <div class="select-room">
+            <button onclick="document.getElementById('id01').style.
+            display='block'" style="width:auto;">Capacity</button>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.
+                        display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container-numb">
+                        <h3>How many people need space?</h3>
+                        <div class="number">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>10</button>
+                            <button>11</button>
+                            <button>12</button>
+                            <button>13</button>
+                            <button>14</button>
+                            <button>15</button>
+                            <button>16</button>
+                            <button>17</button>
+                            <button>18</button>
+                            <button>19</button>
+                            <button>20</button>
+                            <button>21-100</button>
+                            <button>100+</button>
+                        </div>
+                        <div class="information">
+                            <p>Keep in mind: To professional diastence.
+                                we encourage you to look for space that fits
+                                twice the amount of people you're trying to seat.
+                            </p>     
+                        </div>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.
+                        display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <button onclick="document.getElementById('id02').style.
+            display='block'" style="width:auto;">Capacity</button>
+            <div id="id02" class="modal">
+                <form class="modal-content2 animate" action="/action_page.php" method="post">
+                    <div class="ccl">
+                        <div class="container-calender">
+                            <div class="calender">
+                                <div class="month">
+                                    <i class="fa fa-angle-left prev-go" aria-hidden="true"></i>
+                                    <div class="date">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <i class="fa fa-angle-right next-go" aria-hidden="true"></i>
+                                </div>
+                                <div class="weekdays">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="days">
+                                    <div class="prev-date">26</div>
+                                    <div class="prev-date">27</div>
+                                    <div class="prev-date">28</div>
+                                    <div class="prev-date">29</div>
+                                    <div class="prev-date">230</div>
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                    <div>6</div>
+                                    <div>7</div>
+                                    <div>8</div>
+                                    <div>9</div>
+                                    <div class="today">10</div>
+                                    <div>11</div>
+                                    <div>12</div>
+                                    <div>13</div>
+                                    <div>14</div>
+                                    <div>15</div>
+                                    <div>16</div>
+                                    <div>17</div>
+                                    <div>18</div>
+                                    <div>19</div>
+                                    <div>20</div>
+                                    <div>21</div>
+                                    <div>22</div>
+                                    <div>23</div>
+                                    <div>24</div>
+                                    <div>25</div>
+                                    <div>26</div>
+                                    <div>27</div>
+                                    <div>28</div>
+                                    <div>29</div>
+                                    <div>30</div>
+                                    <div>31</div>
+                                    <div class="next-date">1</div>
+                                    <div class="next-date">2</div>
+                                    <div class="next-date">3</div>
+                                    <div class="next-date">4</div>
+                                    <div class="next-date">5</div>
+                                    <div class="next-date">6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="monthly">
+            <div>
+                <h3>MONTHLY SUBSCRIPTION</h3>
+            </div>
+        </div>
+        <div class="box-container">
+            <div >
+                <div class="box-1">
+                    <img src="../image/private-office.png" width="180px">
+                    <div >
+                        <div class="box1size">
+                            <h5>Private Offices</h5> 
+                            <div class="boxcolom">
+                                <img src="../image/iconspace.png" >
+                                <p>2</p>
+                            </div>   
+                        </div>
+                        <div>
+                            <p>Lockable office space for teams of all sizes</p>
+                        </div> 
+                    </div>
+                    <div class="box1price">
+                        <p>from Rp2.400.000/month</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div >
+                <div class="box-2">
+                    <img src="../image/dedicated-desk__2_.png" width="180px">
+                    <div >
+                        <div class="box2size">
+                            <h5>Dedicated Desks</h5> 
+                            <div class="boxcolom2">
+                                <img src="../image/iconspace.png" >
+                                <p>2</p>
+                            </div>   
+                        </div>
+                        <div>
+                            <p>Desk space in a shared lockable office</p>
+                        </div> 
+                    </div>
+                    <div class="box2price">
+                        <p>from Rp2,400,000/month</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="box-3">
+                    <img src="../image/HOTDESK_ICON.png" width="180px">
+                    <div >
+                        <div class="box3size">
+                            <h5>Private Offices</h5> 
+                            <div class="boxcolom3">
+                                <img src="../image/iconspace.png" >
+                                <p>2</p>
+                            </div>   
+                        </div>
+                        <div>
+                            <p>Access to shared workspace & common areas</p>
+                        </div> 
+                    </div>
+                    <div class="box3price">
+                        <p>from Rp2,000,000/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="amenities">
+            <h1>Amenities</h1>
+            <p>Updated with your health and safety in mind</p>
+            <div class="item-amenities">
+                <div id="box-amenities">
+                    <img src="../image/cleaner.svg" >
+                    <p>Cleaning Service</p>
+                </div>
+                <div id="box-amenities">
+                    <img src="../image/ac.svg">
+                    <p>Cooling System</p>
+                </div>
+                <div id="box-amenities">
+                    <img src="../image/wifi.svg" >
+                    <p>Teach Service</p>
+                </div>
+                <div id="box-amenities">
+                    <img src="../image/electricsuplay.svg" >
+                    <p>Backup Power</p>
+                </div>
+                <div id="box-amenities">
+                    <img src="../image/sofa.svg">
+                    <p>Common Area</p>
+                </div>
+                <div id="box-amenities">
+                    <img src="../image/coffee.svg">
+                    <p>Coffee Louge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location">
+        <div id="location-1">
+            <h1>Location</h1>
+            <p>Noble House, Mega Kuningan</p>
+            <p>No. 2, Jl. Dr.Ide Anak Agung Gde Agung Kav. E 4.2
+            Jakarta, JK 12950</p>
+        </div>
+        <div id="map">
+            <img src="../image/map 1.svg">
+        </div>
+        <div id="icon-map">
+            <div>
+                <img src="../image/maps-pin.svg">
+            </div>
+            <div>
+                <p>Jl. Sudirman (8 minute drive)</p>
+            </div>
+        </div>
+        <div id="icon-map">
+            <div>
+                <img src="../image/bus.svg">
+            </div>
+            <div>
+                <p>Multiple TransJakarta busway transport lines on Jl. HR Rasuna Said (2 minute walk)</p>
+            </div>
+        </div>
+    </div>
+    <div class="WPAS">
+       <div>
+           <h1>What People Are Saying</h1>
+       </div>
+       <div class="star-container2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <p>4.5</p>
+                <hr>
+                <p>15 Review</p>
+        </div>
+        <div class="box-container">
+            <div >
+                <div class="box-coment1">
+                   <div>
+                       <p>Yusuf Prasetyo</p>
+                   </div>
+                   <div>
+                       <p>November 1, 2021</p>
+                   </div>
+                   <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                   </div>
+                   <div>
+                       <p>Nice co working space</p>
+                   </div>
+                </div>
+            </div>
+            <br>
+            <div >
+                <div class="box-coment2">
+                    <div>
+                        <p>Yusuf Prasetyo</p>
+                    </div>
+                    <div>
+                        <p>November 1, 2021</p>
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div>
+                        <p>Nice co working space</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="box-coment3">
+                    <div>
+                        <p>Yusuf Prasetyo</p>
+                    </div>
+                    <div>
+                        <p>November 1, 2021</p>
+                    </div>
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div>
+                        <p>Nice co working space</p>
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <a href="">Load more</a>
+            </div>
+    </div>
+</div>
+<!--------nearby--> 
+<div class="offer">
+    <div class="small-container">
+        <h1>Nearby Buildings</h1>
+        <div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="../image/Hero (1).svg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <h1>Noble House</h1>
+                    <p>Jakarta</p><br><br><br>
+                    <small>
+                        Jl.Mangga Duo No.19,50125
+                    </small>
+                </div>
+            </div>
+            <div class="price">
+                <div>
+                    <h3>Available workingspace</h3>
+                </div>
+                <div>
+                    <p>from Rp7.350.000/month</p>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div>    
+            <div class="row">
+                <div class="col-2">
+                    <img src="../image/Hero3.svg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <h1>Noble House</h1>
+                    <p>Jakarta</p><br><br><br>
+                    <small>
+                        Jl.Mangga Duo No.19,50125
+                    </small>
+                </div>
+            </div>
+            <div class="price">
+                <div>
+                    <h3>Available workingspace</h3>
+                </div>
+                <div>
+                    <p>from Rp7.350.000/month</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="address-container">
+        <div>
+            <p>+86 123 4567 7890</p>
+            <p>FindSpace HQ</p>
+            <p>Jl. Tempat Kaisar Blok AB 12 No. 2</p>
+            <p>Daerah Istimewa Aachen, Westfalia Utara 52062</p>
+        </div>
+        <div>
+            <img src="../image/facebook.svg" >
+            <img src="../image/instagram.svg" >
+            <img src="../image/Twitter.svg" >
+            <img src="../image/Email.svg" >
+            <img src="../image/LinkedIn.svg" >
+            <img src="../image/Youtube.svg" >
+        </div>    
+    </div>
+    <div class="writer-web">
+        <p>Copyright © 2021 FindSpace Management LLC
+            All rights reserved</p>
+    </div>
+</footer>
+</body>
+<script src="detailed.js"></script>
+</html>

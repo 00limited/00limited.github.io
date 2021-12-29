@@ -1,0 +1,164 @@
+body{
+    background-color: #f6f5f5;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 10vh;
+    background-image:url(../image/backgroud.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    align-items: center;
+    color: #505050;
+    font-size: 25px;
+    font-weight: 700;
+}
+section a:hover{
+    color:aqua;
+}
+section a.active {
+    color: #fa1010;
+}
+
+
+.logo{
+    font-family:EB Garamond;
+    color: #000000;
+    font-size: 30px;
+}
+
+.title{
+    width: 449px;
+    height: 120px;
+    padding-left: 50px;
+    font-size:40px;
+}
+
+.zx-78{
+    height: 80vh;
+}
+.form3{
+    height: 60vh;
+    padding-left:50px ;
+    
+    display: flex;
+    
+}
+.form3 .contact1{
+    width: 1300px;
+    height: 50vh;
+    font-size: 25px;
+}
+.form3 .contact1 .row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding: 2%;   
+}
+.form3 .contact1 .row .box-54 > input{
+    width: 300px;
+    height: 30px;    
+}
+.form3 .contact1 .row .box-54 .costum-select > select{
+    width: 310px;
+    height: 40px;
+}
+.form3 .contact1 .row .box-54 .col-10{
+    padding-top: 2%;
+}
+.form3 .contact1 .row .box-54 .col-10 >textarea{   
+    width: 300px;
+    height: 80px;
+    resize: none;
+}
+.form3 .contact1 .row .box-54 .button{
+    width: 213px;
+    height: 94px;
+    background-color: #0000FF ;
+    font-weight: bold;
+    font-size: 24px ;
+}
+
+
+
+
+
+
+.form3 .contact1 .row .box-60{
+    padding-right: 500px;
+}
+
+.form3 .contact1 .row .box-60 > input{
+    width: 300px;
+    height: 30px;
+}
+.form3 .contact1 .row .box-60 .phone-numb > select{
+    width: 50px;
+    height: 35px;
+}
+.form3 .contact1 .row .box-60 .phone-numb > input{
+    width: 240px;
+    height: 30px;
+}
+
+.form3 .contact1 .row .box-60 > select{
+    width: 310px;
+    height: 40px;
+}
+
+
+.form3 .contact2 >h3{
+   font-size: 34px;
+}
+.form3 .contact2 >p{
+    width: 372px;
+    height: 108px;
+    font-size: 24px;
+}
+
+.form3 .contact2 .call-contact{
+    display: flex;
+    font-size: 24px;
+    color: #0000FF;
+}
+footer{
+    background-color: #6b6868;
+}
+.address-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    height: 200px;
+
+}
+
+.writer-web{
+    align-items: center;
+    padding: 10px 32%;
+}
+

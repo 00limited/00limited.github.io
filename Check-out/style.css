@@ -1,0 +1,212 @@
+body{
+    background-color: #f6f5f5;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 10vh;
+    background-image:url(../image/backgroud.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    align-items: center;
+    color: #505050;
+    font-size: 25px;
+    font-weight: 700;
+}
+section a:hover{
+    color:aqua;
+}
+section a.active {
+    color: #fa1010;
+}
+
+
+.logo{
+    font-family:EB Garamond;
+    color: #000000;
+    font-size: 30px;
+}
+
+.returnback{
+    width: 769px;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #6A6A6A;
+    padding: 1% 3%;
+}
+.title{
+    width: 90%;
+    height: 20vh;
+    padding: 1% 3%;
+}
+.title > h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 80px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.title > p{
+    position: absolute;
+    width: 582px;
+    height: 108px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.picture{
+    padding: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.picture >img{
+    width: 60%;
+}
+.picture .price{
+    width: 639px;
+    height: 325px;
+    background-color: #afabab;
+    padding-left: 22px; 
+    padding-top: 13px;
+    
+
+}
+.picture .price .price-cont{
+    padding-left: 22px; 
+    padding-top: 13px;
+    padding-right: 33px;
+}
+
+.picture .price .price-cont .container-colom{
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture .price .price-cont .container-colom .boxcolom{
+
+    width: 40px;
+    height: 20px;
+  
+    display: flex;
+    gap: 5px;
+    background-color: whitesmoke;
+    
+}
+.boxcolom img{
+    height: 18px;
+}
+.boxcolom p{
+    font-size: 12px;
+    margin: 1px 1px 1px 1px;
+}
+
+.picture .price .price-cont .container-colom .boxcolom2{
+
+    width: 130px;
+    height: 20px;
+  
+    display: flex;
+    gap: 5px;
+    background-color: whitesmoke;
+    
+}
+.boxcolom2 img{
+    height: 18px;
+}
+.boxcolom2 p{
+    font-size: 12px;
+    margin: 1px 1px 1px 1px;
+}
+
+.picture .price .price-cont .custom-select{
+    position: relative;
+    font-family: Arial;
+   
+}
+
+.picture .price .price-cont .custom-select >select{
+    width: 580px;
+    height: 40px;
+}
+
+.picture .price .price-cont >p{
+    text-align: left;
+    width: 180px;
+}
+.picture .price .price-cont #button-view{
+    text-align: center;
+    width: 100%;
+    background-color: #0000FF;
+    font-size: large;
+    cursor: pointer;
+
+}
+
+.detail{
+    padding: 1% 3%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding-right:45% ;
+}
+.detail #capacity{
+    display: flex;
+    align-items: center;
+}
+
+.detail #capacity >img{
+    width: 88px; 
+    height:30px;
+}
+footer{
+    background-color: #6b6868;
+}
+.address-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    height: 200px;
+
+}
+
+.writer-web{
+    align-items: center;
+    padding: 10px 32%;
+}
