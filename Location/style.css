@@ -1,59 +1,183 @@
-body{
-    background-color: #f6f5f5;
-    margin:0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --green:#7E8C61;
+  }
+
+*{
     font-family: 'Poppins', sans-serif;
-}
-ul{
-    list-style: none;
-}
-a{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
     text-decoration: none;
-}
-section{
-    width: 100%;
-    height: 10vh;
-    background-image:url(../image/backgroud.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    transition: all .2s linear;
 }
 
-nav{
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 60px;
+  scroll-behavior: smooth;
+}
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+.heading span{
+    font-size: 35px;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+}
+  
+.heading span.space{
+    background:none;
+}
+.btn:hover{
+    background:#333;
+    color:var(--green);
+  }
+  
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #FFFFFF;
+    z-index: 1000;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    background-color: #FFFFFF;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    padding: 0px 5%;
-}
-nav ul{
-    display: flex;
-}
-nav ul li a{
-    margin: 30px;
-    align-items: center;
-    color: #505050;
-    font-size: 25px;
-    font-weight: 700;
-}
-section a:hover{
-    color:aqua;
-}
-section a.active {
-    color: #fa1010;
+    padding: 20px 9%;
 }
 
+header .logo{
 
-.logo{
-    font-family:EB Garamond;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;    
     color: #000000;
-    font-size: 30px;
+}
+header .navbar{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+
+}
+header .navbar a{
+    color: #333;;
+    font-size: 2rem;
+    margin:0 .2rem;
+  
+  }
+
+header .navbar a:hover{
+    color:var(--green);
 }
 
-.search input[type=text]{
+header .icons i{
+    font-size: 2.5rem;
+    color:#333;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+header .icons i:hover{
+    color:var(--green);
+}
 
+.login-form-container{
+    position: fixed;
+    top:-120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form-container.active{
+    top:0;
+  }
+
+  .login-form-container form{
+    margin:2rem;
+    padding:1.5rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    width:50rem;
+  }
+  .login-form-container form h3{
+    font-size: 3rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem 0;
+  } 
+  .login-form-container form .box{
+    width:100%;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    margin:.6rem 0;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+  }
+  .login-form-container form .box:focus{
+    border-color: var(--green);
+  }
+  .login-form-container form #remember{
+    margin:2rem 0;
+  }
+  .login-form-container form label{
+    font-size: 1.5rem;
+  }
+  .login-form-container form .btn{
+    display: block;
+    width:100%;
+  }
+  .login-form-container form p{
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#666;
+  }
+  .login-form-container form p a{
+    color:var(--green);
+  }
+  .login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+  }
+  .login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+  }
+  #menu-bar{
+    color:#333;
+    border:.1rem solid #333;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding:.5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+  }
+.search{
+    padding-top: 10%;
+}
+.search input[type=text]{
+    
     width: 230px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -64,7 +188,7 @@ section a.active {
     background-size: 35px;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 20px 12px 60px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 
@@ -73,70 +197,174 @@ section a.active {
     width: 100%;
   }
 
-.room2{  
-    width: 90%;   
+.room2{     
     background-size: cover;
-    padding: 4%;
+    padding:2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.room2 h3{
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+.room2 .dataInput{
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  width: 100%;
+  padding: 1%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.room2 .dataInput .col-2 {
+  font-size: 20px;
+  width: 100%;
+  display:table;
+}
+.room2 .dataInput .col-2 .address{
+  padding-top:155px;
 }
 
-.room2 #search{
-    font-size: 40px;
-    font-family:'Poppins', sans-serif;
+
+
+
+.footer{
+    background:#333;
+     
+  }
+  .footer .box-container{
+    display: flex;
+    padding: 2% 10% 2% 10%; 
+    gap:1.5rem;
+  }
+  .footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 25rem;
+  }
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  .footer .box-container .box img{
+    display: wrap;
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  
+  .footer .writer-web{
+    text-align: center;
+    padding:2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .writer-web span{
+    color:var(--green);
+  }
+
+  @media (max-width:1200px){
+
+    html{
+      font-size: 55%;
+    }
+  
+  }
+  
+@media (max-width:991px){
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+  .search{
+    padding-top: 15%;
+  }
+  .room2 .dataInput{
+    width: 100%;
+  }
+
 }
 
-.col-2 .offer-img{
-    padding: 10px;
-    align-items: center;
-}
-#row1{
-    border-style: groove;
-    height: 290px;
-    display: flex;
-    align-content: center;
-    background-size: cover;
-    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
-    cursor:pointer;
-}
-#row2{
-    border-style: groove;
-    height: 290px;
-    display: flex;
-    align-content: center;
-    background-size: cover;
-    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
-    cursor:pointer;
-}
-#row3{
-    border-style: groove;
-    height: 290px;
-    display: flex;
-    align-content: center;
-    background-size: cover;
-    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
-    cursor:pointer;
-}
-#row4{
-    border-style: groove;
-    height: 290px;
-    display: flex;
-    align-content: center;
-    background-size: cover;
-    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
-    cursor:pointer;
-}
-footer{
-    background-color: #6b6868;
-}
-.address-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-    height: 200px;
+@media (max-width:768px){
+  html{
+    font-size: 40%;
+  }
+
+  #menu-bar{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; right:0; left: 0;
+    background: #fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding:1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a{
+    display: block;
+    border-radius: .5rem;
+    padding:1.5rem;
+    margin:1.5rem 0;    
+    background:#fff;
+  }
+  header .logo{
+    font-size:40px ;
+  }
+  .search{
+    padding-top: 20%;
+  }
+  .room2 .dataInput{
+    width: 100%;
+    display: grid;
+    padding: 2%;
+  }
+  .room2 .dataInput img{
+    width: 100%;
+  }
+  .footer .box-container{
+    display: table;
+  }
+
 
 }
+@media(max-width:448px){
+  html{
+    font-size: 35%;
+  }
+  .footer .box-container img{
+    width: 10%;
+  }
+}
 
-.writer-web{
-    align-items: center;
-    padding: 10px 32%;
+@media (max-width:390px){
+
+  html{
+    font-size: 30%;
+  }
+  .heading span{
+    font-size: 2.5rem;
+  }
+
+  .search{
+    padding-top: 32%;
+  }
+  .footer .box-container img{
+    width: 10%;
+  }
 }

@@ -3,109 +3,142 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check out</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <section>
-        <!-----------navigation------------>
-        <nav>
-            <a href="../Home/home.html" class="logo">FINDPLACE</a>
-            <ul>
-                <li><a href="../Location/index.html" class="active">Location</a></li>
-                <li><a href="../Contact Us/index.html">Contact Us</a></li>
-                <li><a href="#">Log In<img src="../image/Hero.svg" height="20px"></a></li>
-            </ul>
-        </nav>
-        </section>
-        <div class="returnback">
-            <h2>< Available workspace</h2>
-        </div>
-        <div class='title'>
-            <h1>Private Office #30-120</h1>
-            <p>Noble House, Mega Kuningan
-                No. 2, Jl. Dr.Ide Anak Agung Gde Agung Kav. E 4.2
-                Jakarta, JK 12950</p>
-        </div><br><br>
-        <div class="picture">
-            <img src="../image/pctrcheckout.svg" alt="space.jpg">
-            
-            <div class="price">
-                <div class="price-cont">
-                    <div class="container-colom">
-                        <div class="boxcolom">
-                            <img src="../image/iconspace.png" >
-                            <p>2</p>
-                        </div>
-                        <div class="boxcolom2">
-                            <img src="../image/clip-art-account.svg" >
-                            <p>Move In - DEC 08</p>
-                        </div>
-                    </div>
-                    <h3>IDR Rp7,350,000/month</h3>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+        
+    <a href="#" class="logo">FINDPLACE</a>
+        
+    <nav class="navbar">
+        <a href="#">Location</a>
+        <a href="#">Contact Us</a>
+    </nav>
+        
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn">Log in</i>
+    </div>
+</header>
+<!-- header ends-->    
+<!-- login form container  -->
+<div class="login-form-container">
+    
+    <i class="fas fa-times" id="form-close"></i>
 
-                    <h5>Commitment Term :</h5>
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                        <option value="0">Select Time:</option>
-                        <option value="1">Month-to-month</option>
-                        <option value="2">Year-to-year</option>
-                        <option value="3">Day-to-day</option>
-                        </select>
-                    </div>
-                    <p>Private Office #30-120
-                        Floor 30
-                        Noble House</p>
-                    <button id="button-view">
-                        <p>Get in touch</p>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="office-details">
-                <div id="capacity">
-                    <img src="../image/Hero-Foto.svg" >
-                    <p>2 Person Capacity</p>
-                </div>
-                <div id="capacity">
-                    <img src="../image/floor.svg" >
-                    <p>Floor 30</p>
-                </div>
-                <div id="capacity">
-                    <img src="../image/furnished.svg">
-                    <p>Fully-Furnished</p>
-                </div>
-            </div>
-            <div class="membership">
-                <div id="capacity">
-                    <img src="../image/meeting-room.svg">
-                    <p>4 credits to book up to 4 hours of meeting room time</p>
-                </div>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
 
-            </div>
+</div>
+<!-- login form ends -->
+<!--- button to back -->
+<section class="search">
+    <p>< Available workspace</p>
+</section>
+<!-- title product-->
+<section class="title"> 
+    <h1>PRIVATE OFFICE #30-120</h1>
+    <p>Noble House, Mega Kuningan
+        No. 2, Jl. Dr.Ide Anak Agung Gde Agung Kav. E 4.2
+        Jakarta, JK 12950</p>      
+</section>
+<!-- PICTURE for product start-->
+<section class="product">
+    <img src="../image/pctrcheckout.svg" alt="">
+    <div class="product-container">
+        <div class="movein">
+            <select>
+                <option>capacity</option>
+                <option>2</option>
+                <option>5+</option>
+                <option>20+</option>
+            </select>
+            <input type="date">
         </div>
-        <footer>
-            <div class="address-container">
-                <div>
-                    <p>+86 123 4567 7890</p>
-                    <p>FindSpace HQ</p>
-                    <p>Jl. Tempat Kaisar Blok AB 12 No. 2</p>
-                    <p>Daerah Istimewa Aachen, Westfalia Utara 52062</p>
-                </div>
-                <div>
-                    <img src="../image/facebook.svg" >
-                    <img src="../image/instagram.svg" >
-                    <img src="../image/Twitter.svg" >
-                    <img src="../image/Email.svg" >
-                    <img src="../image/LinkedIn.svg" >
-                    <img src="../image/Youtube.svg" >
-                </div>    
-            </div>
-            <div class="writer-web">
-                <p>Copyright © 2021 FindSpace Management LLC
-                    All rights reserved</p>
-            </div>
-        </footer>
-</body>
+        <h3>IDR Rp7,350,000/month</h3>
+        <h5>Commitment Term :</h5>
+        <select class="custom-select" style="width:200px;">
+            <option value="0">Select Time:</option>
+            <option value="1">Month-to-month</option>
+            <option value="2">Year-to-year</option>
+            <option value="3">Day-to-day</option>
+        </select>
+        <p>Private Office #30-120
+            Floor 30
+            Noble House</p>
+        <button id="button-view">
+            Get in touch
+        </button>        
+    </div>
+</section>
+<!-- PICTURE for product ends-->
+<!-- fasilitas indoor start-->
+<section class="facilty">
+    <div class="office-details">
+        <h3>OFFICES DETAILS</h3>
+        <div id="capacity">
+            <img src="../image/user.png" >
+            <p>2 Person Capacity</p>
+        </div>
+        <div id="capacity">
+            <img src="../image/floor.svg" >
+            <p>Floor 30</p>
+        </div>
+        <div id="capacity">
+            <img src="../image/furnished.svg">
+            <p>Fully-Furnished</p>
+        </div>
+    </div>
+    <div class="membership">
+        <h3>MEMBERSHIP INCLUDES</h3>
+        <div id="capacity">
+            <img src="../image/meeting-room.svg">
+            <p>4 credits to book up to 4 hours of meeting room time</p>
+        </div>
+
+    </div>
+</section>
+<!-- fasilitas indoor ends-->
+<!-- footer start-->
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <p>+86 123 4567 7890</p>
+            <p>FindSpace HQ</p>
+            <p>Jl. Tempat Kaisar Blok AB 12 No. 2</p>
+            <p>Daerah Istimewa Aachen, Westfalia Utara 52062</p>
+        </div>
+        <div class="box">
+            <img src="../image/facebook.svg" >
+            <img src="../image/instagram.svg" >
+            <img src="../image/Twitter.svg" >
+            <img src="../image/Email.svg" >
+            <img src="../image/LinkedIn.svg" >
+            <img src="../image/Youtube.svg" >
+        </div>
+    </div>
+    <div class="writer-web">
+        <p>Copyright © 2021 <span>FindSpace</span> Management LLC
+            All rights reserved</p>
+    </div>
+
+</section>
+<!-- footer ends-->
+
+
 <script src="checkout.js"></script>
 </html>
